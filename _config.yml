@@ -14,7 +14,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Documentation csharp
-email: soufiane.elka@gmail.com
+email: 
 description: >- # this means to ignore newlines until "baseurl:"
   Documentation des fonctionnalités d'une applications csharp mode console
   et mode windowsforms.
