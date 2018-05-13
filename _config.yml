@@ -18,8 +18,8 @@ email: soufiane.elka@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Documentation des fonctionnalités d'une applications csharp mode console
   et mode windowsforms.
-baseurl: "/csharp" # the subpath of your site, e.g. /blog
-url: "https://kainio.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://kainio.github.io/csharp" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: kainio
 github_username:  kainio
 
