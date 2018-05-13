@@ -1,6 +1,33 @@
 ---
-published: false
+layout: post
+title: "Utilisation de colorDialog et fontDialog et openFileDialog"
+categories: csharp fontDialog colorDialog openFileDialog
 ---
-## A New Post
+## Instruction
+Lors de la conception de l'interface utilisateur (mode conception), ajouter un des éléments suivant colorDialog ou fontDialog ou openFileDialog.
 
-Enter text in [Markdown](http://daringfireball.net/projects/markdown/). Use the toolbar above, or click the **?** button for formatting help.
+## Code
+Utilisez le code suivant dans la méthode de l'événement:
+
+{% highlight csharp %}
+//Exemple colorDialog
+
+if (colorDialog1.ShowDialog() == DialogResult.OK)
+{
+  label1.ForeColor = colorDialog1.Color;
+}
+
+//Exemple fontDialog
+
+if (fontDialog1.ShowDialog() == DialogResult.OK)
+{
+  label1.Font = fontDialog1.Font;
+ }
+ 
+//Exemple openFileDialog
+
+if (openFileDialog1.ShowDialog() == DialogResult.OK)
+{
+  BackgroundImage = Image.FromFile(openFileDialog1.FileName);
+}
+{% endhighlight %}

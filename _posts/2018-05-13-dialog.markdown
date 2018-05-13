@@ -1,0 +1,19 @@
+---
+title: "Comment séparer une chaîne de caractères (String) en tableau d’éléments"
+---
+## Utlisation de la fonction Split
+La séparation se fait à l'aide de la fonction *Split* sur une chaîne de caractère. 
+La fonction *Split* nécessite un paramètre de type *char[]* (un tableau de caractères) utilisé comme un sépérateur. 
+La fonction *Split* retourne un tableau de type string (*string[]*) 
+
+{% highlight csharp %}
+// Déclaration du sépérateur
+char[] separator = { ' ' };
+
+// Exemple
+string nom = "Anass anass";
+string[] mots = nom.Split(separator);
+
+// Exemple: utilisation en windowsfroms avec listbox 
+listBox1.Items.AddRange(textBox1.Text.Split(separator));
+{% endhighlight %}

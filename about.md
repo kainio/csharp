@@ -1,18 +1,18 @@
 ---
 layout: page
-title: About
+title: "A propos"
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
-
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
-
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
+Ceci est une documentation de certaines fonctionnalités du language csharp pour le mode console et aussi
+pour le mode windowsforms.
 
 
-[jekyll-organization]: https://github.com/jekyll
+Vous pouvez trouver le code de ce site sur GitHub:
+[la source de cette documentation][site-repo] / le code du site se trouve dans la branche `gh-pages`
+
+Ce site a été créé par Soufiane El Kassib, vous pouvez trouver son profil github
+[ici](https://github.com/kainio)
+
+
+[site-repo]: https://github.com/kainio/csharp
