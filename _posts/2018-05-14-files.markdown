@@ -60,7 +60,7 @@ string ch = F.ReadLine();
 // Arrêter la lecture lorsqu'il n'y plus de ligne
 while (ch != null)
   {
-  // Mettre ici tout la logique de la manipulation de la ligne
+  // Mettre ici la logique de la manipulation de la ligne
     nb += ch.Trim().Length;
     // Lire la ligne suivante
     ch = F.ReadLine(); 
@@ -68,5 +68,8 @@ while (ch != null)
  // Fermer le fichier
 F.Close();
 {% endhighlight %}
+
+## La méthode chaine.Trim()
+Supprime les espaces au début de la chaîne et à la fin.
 
 
