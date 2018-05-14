@@ -1,0 +1,72 @@
+---
+title: "Comment manipuler les fichiers"
+---
+## Préparation
+Avant la lecture, il faut d'abord déclarer le chemin de fichier c'est à dire
+la source de lecture ou d'écriture du fichier, sous forme d'une chaine de
+caractères, n'oublier pas de mettre **@** au début de le chaine permettre au
+compilateur de lire la chaine tel qu'elle est.
+
+**Exemple:**
+{% highlight csharp %}
+// Déclaration du chemin du fichier
+string cheminfichier = @"C:\Users\anass\Desktop\Fich10.txt";
+{% endhighlight %}
+
+## La méthode File.ReadAllLines()
+Lit un fichier et retourne un tableau de chaine de caractères contenant tout les
+lignes du fichier.
+
+**Exemple:**
+{% highlight csharp %}
+// lit le fichier et retourne un tableau de string
+string[] fichier = File.ReadAllLines(cheminfichier);
+foreach (string item in fichier)
+ {
+   // Manipuler la ligne
+ }
+// Afficher le nombre de ligne
+ textBox3.Text = Convert.ToString(File.ReadAllLines(cheminfichier).Length);
+{% endhighlight %}
+
+## Le méthode File.ReadAllText()
+Pour pouvoir lire le fichier en entier et sous forme de string
+ce qui peut être fait au moment du chargement du formulaire (**form_load**)
+
+**Exemple:**
+{% highlight csharp %}
+// lecture du fichier en entier en le convertissant en string
+textBox6.Text = File.ReadAllText(cheminfichier); 
+{% endhighlight %}
+
+
+## Lecture du fichier sous forme d'un flux (stream) de lecture
+En créant une instance de la classe **StreamReader** tout en passant le chemin du 
+fichier (la source) comme parammètre.
+
+**Exemple:**
+{% highlight csharp %}
+// Instanciation du StreamReader
+StreamReader F = new StreamReader(cheminfichier);
+{% endhighlight %}
+
+## Lecture du flux ligne par ligne
+
+**Exemple:**
+{% highlight csharp %}
+// lecture de la première ligne
+string ch = F.ReadLine();
+
+// Arrêter la lecture lorsqu'il n'y plus de ligne
+while (ch != null)
+  {
+  // Mettre ici tout la logique de la manipulation de la ligne
+    nb += ch.Trim().Length;
+    // Lire la ligne suivante
+    ch = F.ReadLine(); 
+  }
+ // Fermer le fichier
+F.Close();
+{% endhighlight %}
+
+

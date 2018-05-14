@@ -1,19 +1,33 @@
 ---
-title: "Comment séparer une chaîne de caractères (String) en tableau d’éléments"
+layout: post
+title: "Utilisation de colorDialog et fontDialog et openFileDialog"
+categories: csharp fontDialog colorDialog openFileDialog
 ---
-## Utlisation de la fonction Split
-La séparation se fait à l'aide de la fonction *Split* sur une chaîne de caractère. 
-La fonction *Split* nécessite un paramètre de type *char[]* (un tableau de caractères) utilisé comme un sépérateur. 
-La fonction *Split* retourne un tableau de type string (*string[]*) 
+## Instruction
+Lors de la conception de l'interface utilisateur (mode conception), ajouter un des éléments suivant colorDialog ou fontDialog ou openFileDialog.
+
+## Code
+Utilisez le code suivant dans la méthode de l'événement:
 
 {% highlight csharp %}
-// Déclaration du sépérateur
-char[] separator = { ' ' };
+//Exemple colorDialog
 
-// Exemple
-string nom = "Anass anass";
-string[] mots = nom.Split(separator);
+if (colorDialog1.ShowDialog() == DialogResult.OK)
+{
+  label1.ForeColor = colorDialog1.Color;
+}
 
-// Exemple: utilisation en windowsfroms avec listbox 
-listBox1.Items.AddRange(textBox1.Text.Split(separator));
+//Exemple fontDialog
+
+if (fontDialog1.ShowDialog() == DialogResult.OK)
+{
+  label1.Font = fontDialog1.Font;
+ }
+ 
+//Exemple openFileDialog
+
+if (openFileDialog1.ShowDialog() == DialogResult.OK)
+{
+  BackgroundImage = Image.FromFile(openFileDialog1.FileName);
+}
 {% endhighlight %}

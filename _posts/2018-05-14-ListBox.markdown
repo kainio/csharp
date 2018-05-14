@@ -1,0 +1,22 @@
+---
+title: "ListBox"
+---
+## Utilisation
+La ListBox s'utilise pour afficher une liste de string, en l'ajoute de puis le gestionnaire
+d'interface utilisateur ( mode conception)
+
+## La propriété listBox1.Items
+
+{% highlight csharp %}
+// Items est une liste de tout les membres de la listBox1
+ for(string s in listBox1.Items)
+ {
+     // manipulation du membres
+ }
+{% endhighlight %}
+
+## La méthode listBox1.Items.Add()
+Ajoute un string à la fin de La listBox1
+
+## La méthode listBox1.Items.Remove()
+supprimer un membre de la listeBox1
