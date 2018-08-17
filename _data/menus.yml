@@ -1,0 +1,8 @@
+header:
+  - url: /
+    title: Accueil
+    identifier: home
+    
+  - url: /about
+    title: A propos
+    identifier: about

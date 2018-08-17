@@ -2,6 +2,7 @@
 layout: page
 title: "A propos"
 permalink: /about/
+menus: about
 ---
 
 Ceci est une documentation de certaines fonctionnalités du language csharp pour le mode console et aussi
