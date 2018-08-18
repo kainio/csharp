@@ -3,11 +3,11 @@ header:
 - url: https://github.com/kainio
   weight: 2
   title: Github Profil
-- url: "/about"
-  title: A propos
-  identifier: about
-  weight: 1
 - url: "/"
   title: Accueil
   identifier: home
   weight: 3
+- url: "/about"
+  title: A propos
+  identifier: about
+  weight: 1
