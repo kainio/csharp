@@ -1,16 +1,16 @@
 ---
 header:
-- weight: 2
+- weight: 3
   url: https://example.com
   title: test
 - url: https://github.com/kainio
-  weight: 2
+  weight: 3
   title: Github Profil
 - url: "/"
   title: Accueil
   identifier: home
-  weight: 3
+  weight: 1
 - url: "/about"
   title: A propos
   identifier: about
-  weight: 1
+  weight: 2
