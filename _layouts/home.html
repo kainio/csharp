@@ -8,7 +8,7 @@ layout: default
   {%- endif -%}
 
   <ul>
-    {% for item in site.menus.header %}
+    {% for item in site.data.menus.header %}
       <li class="menu-item-{{ loop.index }}">
         <a href="{{ item.url }}" title="Go to {{ item.title }}">{{ item.title }}</a>
         {% if item.children %}
