@@ -2,7 +2,6 @@
 header:
 - url: https://github.com/kainio
   weight: 1
-  parent: about
   title: Github Profil
 - url: "/about"
   title: A propos
@@ -11,4 +10,4 @@ header:
 - url: "/"
   title: Accueil
   identifier: home
-  weight: 2
+  weight: 3
