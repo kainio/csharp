@@ -1,0 +1,27 @@
+---
+label: docs
+hide_body: false
+is_partial: false
+fields:
+- type: text
+  default: title
+  label: Titre
+  name: title
+  description: The title of the page
+- type: text
+  name: permalink
+  label: Permalien
+  description: le chemin d'accès à cette page
+- type: textarea
+  name: content
+  label: Contenu
+  config:
+    wysiwyg: true
+    schema:
+      format: markdown
+- type: color
+  name: color
+  config:
+    color_format: Hex
+  label: Couleur
+  description: La couleur des liens
