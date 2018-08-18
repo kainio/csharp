@@ -1,10 +1,12 @@
 ---
 layout: page
-title: "A propos"
-permalink: /about/
-menus: about
----
+title: A propos
+permalink: "/about/"
+menu:
+  about:
+    weight: 1
 
+---
 Ceci est une documentation de certaines fonctionnalités du language csharp pour le mode console et aussi
 pour le mode windowsforms.
 
