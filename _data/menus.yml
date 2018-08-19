@@ -1,8 +1,5 @@
 ---
 header:
-- weight: 3
-  url: https://example.com
-  title: test
 - url: https://github.com/kainio
   weight: 3
   title: Github Profil
