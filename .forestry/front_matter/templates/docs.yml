@@ -24,3 +24,5 @@ fields:
     color_format: Hex
   label: Couleur
   description: La couleur des liens
+pages:
+- _posts/DataGridView/GridView in Microsoft docs.md
